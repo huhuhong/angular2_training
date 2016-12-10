@@ -1,0 +1,21 @@
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="myName"/>
+    <button (click)="clickMe(myName)">
+        Show My Name
+    </button>
+    <hr>
+
+    <h1 *ngIf="myName">
+    Hello, {{myName}}
+    </h1>
+    <h1 *ngIf="!myName">
+    Please write your name
+    </h1>
+        
+    <!--<h1 [hidden]="!myName">
+    Hello, {{myName}}
+    </h1>
+    <h1 [hidden]="myName">
+    Please write your name
+    </h1>-->
+    
