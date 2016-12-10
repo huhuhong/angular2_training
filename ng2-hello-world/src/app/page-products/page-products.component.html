@@ -1,0 +1,12 @@
+<h1>
+    Products
+</h1>
+
+<ul>
+    <li *ngFor="let product of products">
+        <a href="products/{{product.id}}">
+            <p>{{product.name}} -- {{product.sellingPrice}}</p>
+        </a>
+        <img [src]="product.image">
+    </li>
+</ul>
